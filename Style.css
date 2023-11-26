@@ -21,6 +21,57 @@
     
 }
 
+.form-item{
+    height: min-content;
+    margin: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.inputRadio{
+    font-weight: lighter;
+    font-size:medium;
+    width: auto;  
+    height: min-content;
+}
+
+
+form input{
+    height: 40px;
+    width:450px;
+}
+
+textarea{
+    height: 100px;
+    width:450px;
+}
+
+.queryType{
+    height: 45px;
+    font-size:large;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+label{
+    height: 80px;
+    font-size:large;
+    font-weight: bold;
+}
+
+.form-box{
+    background-color: rgb(148, 153, 150,0.5);
+    height: min-content;
+    padding:2%;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 250%;
+}
+
 nav{
     border: 1px solid black;
     padding-top: 5px;
@@ -92,4 +143,60 @@ nav{
 .image-wrapper{
     display: inline-block;
     text-align: center;
+}
+
+
+#item-img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.flex-img{
+    width: 400px;
+    height: 280px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.flex-img img{
+    border-radius: 50%;
+}
+.item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.item-display{
+    height: 450px;
+    width: 450px;
+    margin: 10px;
+    /* align-items: left;
+    margin-right: 150px;
+    margin-right:1px solid black; */
+}
+
+.item-values{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+}
+.vline{
+    border-left: solid 1px black;
+}
+
+.allergens{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.allergens img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }

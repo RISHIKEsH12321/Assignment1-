@@ -17,9 +17,86 @@
         <a class = "flex-item" href="About Us.html">About Us</a>
         <a class = "flex-item" href="Help.html">Help</a>
     </nav>
-    <br>    
+    <br>
+
+    
 
 
+
+
+    <h1>Payment</h1>
+    <p style = "font-size: large;">Please fill out the quick form and we will be in touch with you.</p>
+
+
+    <section class = "box flex-container">
+        <form class = "form-item" style = "line-height: 350%;">
+            
+            <!-- Contact Information -->
+            <h2  style = "margin: 0%;">Contact</h2>
+
+            
+            <input type="email" id="email" name="email" placeholder="Email" required>
+    
+            <br>    
+            <input type="tel" id="phoneNo" name="phoneNo" placeholder="Contact Number" required>
+    
+            <br>
+            <input class = "inputRadio" type="radio" id="preferPhone" name="referPhone" value="preferPhone">
+            <label for="html" style = "font-size: medium;">Contact Me By Phone</label>
+
+            <input class = "inputRadio" type="radio" id="preferEmail" name="fav_language" value="preferEmail">
+            <label for="css" style = "font-size: medium;">Contact Me By Email</label>
+
+            <!-- Address -->
+
+            <h2  style = "margin: 0%;">Address</h2>
+
+
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+
+            <br>
+            <input type="text" id="country" name="country" placeholder="Country / Region" required>
+
+            <br>
+            <input type="number" id="address" name="address" placeholder="Address" maxlength="6" required>
+
+            <br>
+            <input type="number" id="postalcode" name="postalcode" placeholder="Postal Code" maxlength="6" required>
+
+
+
+            <!-- Payment -->
+
+            <br>
+            <select id="paymentType" name="paymentType" class = "queryType" required>
+    
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="American Express">American Express</option>
+                <option value="PayPal">PayPal</option>
+    
+            </select>
+
+            <br>
+            <input type="submit" value="Pay Now">
+        </form>
+
+        <p class = "form-box">
+
+            For support or any questions:<br>
+            Call us<br>
+            <a href = "tel: +65 12345678">+65 12345678</a><br>
+            Timings<br>
+            8:00 to 23:00 hrs<br>
+            Email us<br>
+            <a href = "mailto: mailsupport@fnp.sg">mailsupport@fnp.sg</a><br>
+            mailsupport@fnp.sg<br>
+            <a href = "https://www.google.com/">Frequently Ask Questions</a><br>
+            
+
+
+        </p>
+    </section>
 
     <!-- Miscellaneous Information at the Bottom -->
     <footer class = "BottomFlex-container">
@@ -50,6 +127,6 @@
             <li>Address: 123 Blk 23 Street 323</li>
         </ul>
 
-    </footer>
+    </footer> 
 </body>
 </html>
