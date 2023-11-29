@@ -10,24 +10,30 @@
 
 <body>
     <!-- Images at the Top -->
-    <header><img src="Pics/example-logo.jpg" height = "100px"></header>
+    <header class = "flex-container">
+        <img src="Pics/example-logo.jpg" height = "100px">
+        <a href = "Cart.html">
+            <img src="Pics/Cart.png" height = "100px">
+        </a>    
+    </header>
+    
 
     <!-- Navigation Bar -->
     <nav class="flex-container">
-        <a class = "flex-item" href="Index.html">Home</a>
-        <a class = "flex-item" href="Categories.html">Categories</a>
-        <a class = "flex-item" href="About Us.html">About Us</a>
-        <a class = "flex-item" href="Help.html">Help</a>
+        <a id = "navbar" class = "flex-item" href="Index.html">Home</a>
+        <a id = "navbar" class = "flex-item" href="Categories.html">Categories</a>
+        <a id = "navbar" class = "flex-item" href="About Us.html">About Us</a>
+        <a id = "navbar" class = "flex-item" href="Help.html">Help</a>
     </nav>
     <br>
 
 
-    <section class = "box" style = "display: flex;">
-        <img class = "split" src="https://picsum.photos/800/400" />
+    <section class = "box" style = "display: flex; align-items: center;">
+        <img class = "split" src="Pics/Home Page.jpg" style = "height: 600px ;width: 900px;"/>
         <div class = "split">
-            <h3>Description Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
-            <a class="button">Order Now</a>
+            <h3>Check Out Our New Cakes</h3>
+            <p>Brand New Cakes at Shop.<br>New Original Hybrid Cakes.</p>
+            <a class="button" onclick = Redirect()>See Now!</a>
         </div>
 
     </section>
@@ -38,29 +44,29 @@
         <br>
         <ul class = "container" style="border: 0px">
             <li style = "list-style-type: none;" class = "image-wrapper">
-                <img class="flex-cake" src = "https://picsum.photos/800/400">
-                <figcaption>Cake Name</figcaption>
+                <img class="flex-cake" src = "Pics/Cakes/1.jpg">
+                <figcaption>Strawberry Shortcake</figcaption>
             </li>
 
             <li style = "list-style-type: none;" class = "image-wrapper">
-                <img class="flex-cake" src = "https://picsum.photos/800/400">
-                <figcaption>Cake Name</figcaption>
+                <img class="flex-cake" src = "Pics/Cakes/2.jpg">
+                <figcaption>Chocolate Fudge Cake</figcaption>
             </li>
             <li style = "list-style-type: none;" class = "image-wrapper">
-                <img class="flex-cake" src = "https://picsum.photos/800/400">
-                <figcaption>Cake Name</figcaption>
+                <img class="flex-cake" src = "Pics/Cakes/3.jpg">
+                <figcaption>Red Velvet Cake</figcaption>
             </li>
             <li style = "list-style-type: none;" class = "image-wrapper">
-                <img class="flex-cake" src = "https://picsum.photos/800/400">
-                <figcaption>Cake Name</figcaption>
+                <img class="flex-cake" src = "Pics/Cakes/4.jpg">
+                <figcaption>Lemon Blueberry Cake</figcaption>
             </li>
             <li style = "list-style-type: none;" class = "image-wrapper">
-                <img class="flex-cake" src = "https://picsum.photos/800/400">
-                <figcaption>Cake Name</figcaption>
+                <img class="flex-cake" src = "Pics/Cakes/5.jpg">
+                <figcaption>Carrot Cake</figcaption>
             </li>
             <li style = "list-style-type: none;" class = "image-wrapper">
-                <img class="flex-cake" src = "https://picsum.photos/800/400">
-                <figcaption>Cake Name</figcaption>
+                <img class="flex-cake" src = "Pics/Cakes/6.jpg">
+                <figcaption>Tiramisu Cake</figcaption>
             </li>
 
         </ul>
@@ -99,5 +105,11 @@
         </ul>
 
     </footer> 
+
+    <script>
+        function Redirect() {
+            window.location.href = "Categories.html"; 
+        }
+    </script>
 </body>
 </html>

@@ -8,7 +8,13 @@
 </head>
 <body>
     <!-- Images at the Top -->
-    <header><img src="Pics/example-logo.jpg" height = "100px"></header>
+    <header class = "flex-container">
+        <img src="Pics/example-logo.jpg" height = "100px">
+        <a href = "Cart.html">
+            <img src="Pics/Cart.png" height = "100px">
+        </a>    
+    </header>
+    
 
     <!-- Navigation Bar -->
     <nav class="flex-container">
@@ -18,6 +24,30 @@
         <a class = "flex-item" href="Help.html">Help</a>
     </nav>
     <br>
+
+
+    <section id = "cart-container">
+
+
+
+
+
+    </section>
+
+
+
+
+    <button type="button" onclick= activateOrder()>Calculate Order</button>
+
+    <section id ="calculation" class = "calculation">
+
+    </section>
+
+
+    <br>
+
+    <button onclick=  'document.location="FinalPurchase.html"'>Pay Now</button>
+
 
     <!-- Miscellaneous Information at the Bottom -->
     <footer class = "BottomFlex-container">
@@ -49,5 +79,7 @@
         </ul>
 
     </footer> 
+
+    <script src = "Cart.js"></script>
 </body>
 </html>

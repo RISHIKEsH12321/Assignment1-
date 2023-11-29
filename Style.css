@@ -2,9 +2,60 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    margin:0%
+}
+
+
+header{
+    /* background-image: url("Pics/"); */
+    background-color: blue;
+
+}
+
+
+nav {
+    display: flex;
+    border: 1px solid black;
+    padding: 0;
+}
+
+#navbar {
+    flex: 1;
+    background-color: red;
+    text-align: center;
+    padding: 10px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin:0%
+}
+
+#navbar:hover {
+    background-color: black;
+}
+
+
+
+#aboutusImg{
+    width: 600px;
+    height: 500px;
+    align-self: center;
+    /*border-radius: 100px;*/
+}
+
 .box{
     border: 1px solid black;
+    margin:5px;
 }
+
+.AboutUsBox{
+    background-color: rgba(204, 82, 82, 0.3);
+    
+    margin: 10px;
+
+
+}
+
+
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -72,12 +123,6 @@ label{
     line-height: 250%;
 }
 
-nav{
-    border: 1px solid black;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-}
 
 .bottomHead{
     font-size: larger;
@@ -100,7 +145,21 @@ nav{
 .split{
     padding: 10px;
     padding-right: 10px;
-  }
+}
+
+.split h3{
+    padding: 10px;
+    padding-right: 10px;
+    font-size:45px;
+}
+
+.split p{
+    padding: 10px;
+    padding-right: 10px;
+    font-size:25px;
+}
+
+  
 
 .container{
     display: flex;
@@ -200,3 +259,94 @@ nav{
     height: 50px;
     border-radius: 50%;
 }
+
+#allergen-img-item-display{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#allergen-div-item-display{
+    width: 150px;
+    height: 150px;
+}
+
+
+.cart-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    
+} 
+
+
+.cart-container img{
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+
+}
+
+.Cart-item-details{
+    width:1000px;
+    height:200px;
+    padding-top: 50px;
+}
+
+
+.Cart-item-details p{
+    font-size: large;
+}
+
+
+#counter button{
+    width: 20px;
+    height: 20px;
+    /* align-items: center; */
+}
+
+#counter div{
+    width: 20px;
+    height: 20px;
+}
+
+#counter.flex-container{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+/* 
+.calculation{
+    display: flex;
+
+} */
+
+.order-container{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.finaltotal{
+    display: flex;
+    justify-content: right;
+}
+
+.finaltotal p{
+    padding: 0%;
+    padding-left: 11%;
+    padding-right: 11%;
+    font-weight: bold;
+}
+
+
+
+
+
+
+

@@ -8,7 +8,13 @@
 </head>
 <body>
     <!-- Images at the Top -->
-    <header><img src="Pics/example-logo.jpg" height = "100px"></header>
+    <header class = "flex-container">
+        <img src="Pics/example-logo.jpg" height = "100px">
+        <a href = "Cart.html">
+            <img src="Pics/Cart.png" height = "100px">
+        </a>    
+    </header>
+    
 
     <!-- Navigation Bar -->
     <nav class="flex-container">
@@ -58,7 +64,7 @@
             <input type="text" id="country" name="country" placeholder="Country / Region" required>
 
             <br>
-            <input type="number" id="address" name="address" placeholder="Address" maxlength="6" required>
+            <input type="text" id="address" name="address" placeholder="Address" required>
 
             <br>
             <input type="number" id="postalcode" name="postalcode" placeholder="Postal Code" maxlength="6" required>
@@ -78,7 +84,8 @@
             </select>
 
             <br>
-            <input type="submit" value="Pay Now">
+            <input type="submit" value="Pay Now" onclick="showAlertAndRedirect()">
+
         </form>
 
         <p class = "form-box">
@@ -128,5 +135,34 @@
         </ul>
 
     </footer> 
+
+    <script>
+        function showAlertAndRedirect() {
+            if (validateForm()){
+                alert("Payment Successful!");
+                window.location.href = "Index.html"; 
+            }
+            
+        }
+
+        function validateForm() {
+        // Validate your form fields here
+        var email = document.getElementById("email").value;
+        var phoneNo = document.getElementById("phoneNo").value;
+        var fullName = document.getElementById("fullName").value;
+        var country = document.getElementById("country").value;
+        var address = document.getElementById("address").value;
+        var postalcode = document.getElementById("postalcode").value;
+
+        
+        if (email && phoneNo && fullName && country && address && postalcode) {
+            return true; 
+        } else {
+            alert("Please fill out all required fields.");
+            return false;
+        }
+    }
+    </script>
+    
 </body>
 </html>
