@@ -10,13 +10,20 @@
 
 <body>
     <!-- Images at the Top -->
-    <header class = "flex-container">
-        <img src="Pics/example-logo.jpg" height = "100px">
-        <a href = "Cart.html">
-            <img src="Pics/Cart.png" height = "100px">
-        </a>    
+    <header class = "navbar">
+        <div id="logoNname">
+            <a href = "Index.html">
+            <img src="Pics/Logo.png" id="TopLogo">
+            </a>
+            <h1>Donkey Cakes</h1>
+        </div>
+
     </header>
-    
+    <!-- Cart Img that directs to the cart page -->
+    <a href = "Cart.html">
+        <img  id = "cartpic" src="Pics/Cart.png">
+    </a>    
+
 
     <!-- Navigation Bar -->
     <nav class="flex-container">
@@ -27,19 +34,20 @@
     </nav>
     <br>
 
-
-    <section class = "box" style = "display: flex; align-items: center;">
-        <img class = "split" src="Pics/Home Page.jpg" style = "height: 600px ;width: 900px;"/>
+    <!-- Main Advertisement -->
+    <section  class = "HomePageAdvertisement">
+        <img class = "split" src="Pics/Home Page.jpg" id = "HomePagePic"/>
         <div class = "split">
             <h3>Check Out Our New Cakes</h3>
             <p>Brand New Cakes at Shop.<br>New Original Hybrid Cakes.</p>
-            <a class="button" onclick = Redirect()>See Now!</a>
+            <a class="HomePageAdvertisementButton" onclick = Redirect()>See Now!</a>
         </div>
 
     </section>
     <br>
 
-    <section class = "box">
+    <!-- 6 Fancy Cakes -->
+    <section id = "SignatureCakeContainer">
         <h1 class = "header">Signature Cakes</h1>
         <br>
         <ul class = "container" style="border: 0px">
@@ -80,21 +88,14 @@
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Shop Name</li>
             <li><a href="About Us.html">About Us</a></li>
-            <li>Events</li>
-        </ul>
-
-        <ul class = "BottomFlex-item"  style ="list-style-type: none;">
-            <li class = "bottomHead">Ordering</li>
-            <li>Refund Policy</li>
-            <li>Terms And Conditions</li>
-            <li>Privacy Policy</li>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Connect With Us</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>TicTok</li>
+
+                <a href = "https://www.instagram.com/"><img src = "Pics/instagram.png" height = 40px width = 40px></a>
+                <a href = "https://www.facebook.com/"><img src = "Pics/facebook.png" height = 40px width = 40px></a>
+                <a href = "https://twitter.com/"><img src = "Pics/twitter.png" height = 40px width = 40px></a>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">

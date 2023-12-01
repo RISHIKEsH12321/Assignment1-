@@ -7,34 +7,41 @@
     <link rel="stylesheet" type="text/css" href="Style.css" /> 
 </head>
 <body>
-    <!-- Images at the Top -->
-    <header class = "flex-container">
-        <img src="Pics/example-logo.jpg" height = "100px">
-        <a href = "Cart.html">
-            <img src="Pics/Cart.png" height = "100px">
-        </a>    
+    <header class = "navbar">
+        <div id="logoNname">
+            <a href = "Index.html">
+            <img src="Pics/Logo.png" id="TopLogo">
+            </a>
+            <h1>Donkey Cakes</h1>
+        </div>
+
     </header>
-    
+    <!-- Cart Img that directs to the cart page -->
+    <a href = "Cart.html">
+        <img  id = "cartpic" src="Pics/Cart.png">
+    </a>    
+
 
     <!-- Navigation Bar -->
     <nav class="flex-container">
-        <a class = "flex-item" href="Index.html">Home</a>
-        <a class = "flex-item" href="Categories.html">Categories</a>
-        <a class = "flex-item" href="About Us.html">About Us</a>
-        <a class = "flex-item" href="Help.html">Help</a>
+        <a id = "navbar" class = "flex-item" href="Index.html">Home</a>
+        <a id = "navbar" class = "flex-item" href="Categories.html">Categories</a>
+        <a id = "navbar" class = "flex-item" href="About Us.html">About Us</a>
+        <a id = "navbar" class = "flex-item" href="Help.html">Help</a>
     </nav>
     <br>
-
     
 
 
 
+    <!-- Header of the page -->
+    <h1 id = "payment-header">Payment</h1>
+    <p id = "payment-header-text">Please fill out the quick form and we will be in touch with you.</p>
+    <br>
 
-    <h1>Payment</h1>
-    <p style = "font-size: large;">Please fill out the quick form and we will be in touch with you.</p>
 
-
-    <section class = "box flex-container">
+    <!-- Actual Form -->
+    <section class = "form-section">
         <form class = "form-item" style = "line-height: 350%;">
             
             <!-- Contact Information -->
@@ -47,11 +54,21 @@
             <input type="tel" id="phoneNo" name="phoneNo" placeholder="Contact Number" required>
     
             <br>
-            <input class = "inputRadio" type="radio" id="preferPhone" name="referPhone" value="preferPhone">
-            <label for="html" style = "font-size: medium;">Contact Me By Phone</label>
+            <div id = "radioOptionForm">
+                <div id = "radioOption">
+                    <input class = "inputRadio" type="radio" id="preferPhone" name="referPhone" value="preferPhone">
+                    <label for="html" style = "font-size: medium;">Contact Me By Phone</label>
+                </div>
 
-            <input class = "inputRadio" type="radio" id="preferEmail" name="fav_language" value="preferEmail">
-            <label for="css" style = "font-size: medium;">Contact Me By Email</label>
+                <div  id = "radioOption">
+                    <input class = "inputRadio" type="radio" id="preferEmail" name="fav_language" value="preferEmail">
+                    <label for="css" style = "font-size: medium;">Contact Me By Email</label>
+                </div>
+
+            </div>
+
+
+            
 
             <!-- Address -->
 
@@ -83,48 +100,31 @@
     
             </select>
 
+            <!-- Button that checks if the needed boxes are filled and alerts the appropriate message -->
             <br>
-            <input type="submit" value="Pay Now" onclick="showAlertAndRedirect()">
+            <input type="submit" id = "FinalSubmit" value="Pay Now" onclick="showAlertAndRedirect()">
 
         </form>
 
-        <p class = "form-box">
-
-            For support or any questions:<br>
-            Call us<br>
-            <a href = "tel: +65 12345678">+65 12345678</a><br>
-            Timings<br>
-            8:00 to 23:00 hrs<br>
-            Email us<br>
-            <a href = "mailto: mailsupport@fnp.sg">mailsupport@fnp.sg</a><br>
-            mailsupport@fnp.sg<br>
-            <a href = "https://www.google.com/">Frequently Ask Questions</a><br>
-            
-
-
-        </p>
     </section>
 
+
+
+    <br>
+    <br>
     <!-- Miscellaneous Information at the Bottom -->
     <footer class = "BottomFlex-container">
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Shop Name</li>
             <li><a href="About Us.html">About Us</a></li>
-            <li>Events</li>
-        </ul>
-
-        <ul class = "BottomFlex-item"  style ="list-style-type: none;">
-            <li class = "bottomHead">Ordering</li>
-            <li>Refund Policy</li>
-            <li>Terms And Conditions</li>
-            <li>Privacy Policy</li>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Connect With Us</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>TicTok</li>
+
+                <a href = "https://www.instagram.com/"><img src = "Pics/instagram.png" height = 40px width = 40px></a>
+                <a href = "https://www.facebook.com/"><img src = "Pics/facebook.png" height = 40px width = 40px></a>
+                <a href = "https://twitter.com/"><img src = "Pics/twitter.png" height = 40px width = 40px></a>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">

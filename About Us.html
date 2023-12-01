@@ -8,31 +8,45 @@
 </head>
 <body>
     <!-- Images at the Top -->
-    <header class = "flex-container">
-        <img src="Pics/example-logo.jpg" height = "100px">
-        <a href = "Cart.html">
-            <img src="Pics/Cart.png" height = "100px">
-        </a>    
+    <header class = "navbar">
+        <div id="logoNname">
+            <a href = "Index.html">
+            <img src="Pics/Logo.png" id="TopLogo">
+            </a>
+            <h1>Donkey Cakes</h1>
+        </div>
+
     </header>
-    
+    <!-- Cart Img that directs to the cart page -->
+    <a href = "Cart.html">
+        <img  id = "cartpic" src="Pics/Cart.png">
+    </a>    
+
 
     <!-- Navigation Bar -->
     <nav class="flex-container">
-        <a class = "flex-item" href="Index.html">Home</a>
-        <a class = "flex-item" href="Categories.html">Categories</a>
-        <a class = "flex-item" href="About Us.html">About Us</a>
-        <a class = "flex-item" href="Help.html">Help</a>
+        <a id = "navbar" class = "flex-item" href="Index.html">Home</a>
+        <a id = "navbar" class = "flex-item" href="Categories.html">Categories</a>
+        <a id = "navbar" class = "flex-item" href="About Us.html">About Us</a>
+        <a id = "navbar" class = "flex-item" href="Help.html">Help</a>
     </nav>
     <br>
-    
-    <h1 style = "margin-left: 45%;">About Us</h1>
 
+
+
+
+
+    <!-- About Us Title -->
+    <h1 id = "aboutusTitle">About Us</h1>
+
+
+    <!-- All the Information in About Us page -->
     <article class = "AboutUsBox" style = "display: flex;">
         <img id = "aboutusImg" class = "split" style = "margin: 30px;" src="Pics/AboutUs1.jpg" />
         <div class = "split" style = "margin: 30px;">
-            <h3>About History</h3>
-            <p>
-                Welcome to Sweet Delights, where our delectable journey began in the quaint town 
+            <h3 id = "abtHeading">Our History</h3>
+            <p id = "abtText">
+                Welcome to Donkey Cakes, where our delectable journey began in the quaint town 
                 of Confectionville in 1952. Founded by Grandma Betty, our small kitchen quickly 
                 became the heart of the community, filling the air with the sweet aroma of freshly 
                 baked cakes. As the years passed, our recipes evolved, blending traditional flavors 
@@ -46,8 +60,8 @@
 
     <article class = "AboutUsBox" style = "display: flex;">       
         <div class = "split" style = "margin: 30px;">
-            <h3> Employee</h3>
-            <p>At Sweet Delights, our team is the heartbeat of our bakery, and our commitment to 
+            <h3 id = "abtHeading"> Employees</h3>
+            <p id = "abtText">At Donkey Cakes, our team is the heartbeat of our bakery, and our commitment to 
                 excellence extends beyond the kitchen. Our employees are not just individuals; they 
                 are artisans, creators of experiences, and ambassadors of joy. We believe in fostering 
                 a workplace culture where passion, integrity, and creativity converge.
@@ -61,19 +75,13 @@
     <article class = "AboutUsBox" style = "display: flex;">
         <img id = "aboutusImg" class = "split" src="Pics/AboutUs3.jpg" style = "margin: 30px;"/>
         <div class = "split" style = "margin: 30px;">
-            <h3>Our Motto</h3>
-            <p>
-                At Sweet Delights, our passion is more than just baking—it's about curating 
+            <h3 id = "abtHeading">Our Motto</h3>
+            <p id = "abtText">
+                At Donkey Cakes, our passion is more than just baking—it's about curating 
                 moments of joy and delight in every bite. Since our humble beginnings in 1952,
                 we've been on a journey to craft not just cakes, but memories. Through the 
                 years, we've blended tradition with innovation, infusing our recipes with the 
                 essence of time.
-
-                From the swinging '60s to the decadent '80s, Sweet Delights has been a constant 
-                in the ever-changing tapestry of tastes. We've evolved, but our commitment to
-                quality and the artistry of baking remains unwavering. Each cake tells a story, 
-                a story of shared laughter, celebrations, and the simple pleasure of savoring life's 
-                sweetest moments.
             </p>
         </div>
     </article>
@@ -88,21 +96,14 @@
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Shop Name</li>
             <li><a href="About Us.html">About Us</a></li>
-            <li>Events</li>
-        </ul>
-
-        <ul class = "BottomFlex-item"  style ="list-style-type: none;">
-            <li class = "bottomHead">Ordering</li>
-            <li>Refund Policy</li>
-            <li>Terms And Conditions</li>
-            <li>Privacy Policy</li>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Connect With Us</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>TicTok</li>
+
+                <a href = "https://www.instagram.com/"><img src = "Pics/instagram.png" height = 40px width = 40px></a>
+                <a href = "https://www.facebook.com/"><img src = "Pics/facebook.png" height = 40px width = 40px></a>
+                <a href = "https://twitter.com/"><img src = "Pics/twitter.png" height = 40px width = 40px></a>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">

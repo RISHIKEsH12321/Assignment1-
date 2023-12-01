@@ -8,24 +8,31 @@
 </head>
 <body>
     <!-- Images at the Top -->
-    <header class = "flex-container">
-        <img src="Pics/example-logo.jpg" height = "100px">
-        <a href = "Cart.html">
-            <img src="Pics/Cart.png" height = "100px">
-        </a>    
+    <header class = "navbar">
+        <div id="logoNname">
+            <a href = "Index.html">
+            <img src="Pics/Logo.png" id="TopLogo">
+            </a>
+            <h1>Donkey Cakes</h1>
+        </div>
+
     </header>
-    
+    <!-- Cart Img that directs to the cart page -->
+    <a href = "Cart.html">
+        <img  id = "cartpic" src="Pics/Cart.png">
+    </a>    
+
 
     <!-- Navigation Bar -->
     <nav class="flex-container">
-        <a class = "flex-item" href="Index.html">Home</a>
-        <a class = "flex-item" href="Categories.html">Categories</a>
-        <a class = "flex-item" href="About Us.html">About Us</a>
-        <a class = "flex-item" href="Help.html">Help</a>
+        <a id = "navbar" class = "flex-item" href="Index.html">Home</a>
+        <a id = "navbar" class = "flex-item" href="Categories.html">Categories</a>
+        <a id = "navbar" class = "flex-item" href="About Us.html">About Us</a>
+        <a id = "navbar" class = "flex-item" href="Help.html">Help</a>
     </nav>
     <br>
 
-
+    <!-- Uses JS to create elements in the cart-container -->
     <section id = "cart-container">
 
 
@@ -35,40 +42,39 @@
     </section>
 
 
-
-
-    <button type="button" onclick= activateOrder()>Calculate Order</button>
-
+    <!-- Button to create a table that shows all selected cakes, their quantity & thier price -->
+    <!-- It also shows the total price of the entire Order -->
+    <div class = "buttonContainer">
+        <button id = "calculation-button" type="button" onclick= activateOrder()>Calculate Order</button>
+    </div>
+    
+    <br>
+    <br>
     <section id ="calculation" class = "calculation">
 
     </section>
 
 
     <br>
+    <br>
+    <!-- Button that redirects to the final payments page -->
+    <button id = "calculation-button" onclick=  'document.location="FinalPurchase.html"'>Pay Now</button>
 
-    <button onclick=  'document.location="FinalPurchase.html"'>Pay Now</button>
-
+    <br>
 
     <!-- Miscellaneous Information at the Bottom -->
     <footer class = "BottomFlex-container">
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Shop Name</li>
             <li><a href="About Us.html">About Us</a></li>
-            <li>Events</li>
-        </ul>
-
-        <ul class = "BottomFlex-item"  style ="list-style-type: none;">
-            <li class = "bottomHead">Ordering</li>
-            <li>Refund Policy</li>
-            <li>Terms And Conditions</li>
-            <li>Privacy Policy</li>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Connect With Us</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>TicTok</li>
+
+                <a href = "https://www.instagram.com/"><img src = "Pics/instagram.png" height = 40px width = 40px></a>
+                <a href = "https://www.facebook.com/"><img src = "Pics/facebook.png" height = 40px width = 40px></a>
+                <a href = "https://twitter.com/"><img src = "Pics/twitter.png" height = 40px width = 40px></a>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
@@ -79,7 +85,6 @@
         </ul>
 
     </footer> 
-
     <script src = "Cart.js"></script>
 </body>
 </html>

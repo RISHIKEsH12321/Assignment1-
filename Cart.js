@@ -41,30 +41,27 @@ function CakeObject(id, name, description, ingredients, serving_sizes, price, al
 
 
 function CreateCake(cake) {
+    // Creating Main Box to Hold Info
     var cakediv = document.createElement('div');
     cakediv.className = 'cart-container';
 
 
+
+    // Adding all the information
     var img = document.createElement('img');
     img.src = 'Pics/Cakes/' + cake.id + '.jpg';
     img.id = 'item-img';
     cakediv.appendChild(img);
 
 
-    //cake.appendChild(document.createElement('br'));
-
 
 
     var details = document.createElement('div');
-    //details.className = 'flex-container';
+
     details.className = "Cart-item-details"
 
     var name = document.createElement('h2');
-    // a.id = 'name';
-    // a.href = 'Item.html';
-    // a.dataset.customValue = cake.id;
-    // a.onclick = passObjectData;
-    //name.className()
+
     name.textContent = cake.name;
     details.appendChild(name);
 
@@ -75,15 +72,9 @@ function CreateCake(cake) {
 
     cakediv.appendChild(details);
 
-    // var inputSubmit = document.createElement('input');
-    // inputSubmit.type = 'submit';
-    // inputSubmit.value = 'Submit';
-    // cakediv.appendChild(inputSubmit);
 
-    // <div id="counter">0</div>
-    // <button onclick="increment()">+1</button>
-    // <button onclick="decrement()">-1</button>
-
+    //Button that adds and substracts the amount 
+    // of cakes 
     var amountButton = document.createElement('div');
     amountButton.className = 'flex-container';
     amountButton.id = 'counter';
@@ -104,6 +95,7 @@ function CreateCake(cake) {
     var amount = document.createElement('div');
     amount.textContent = cake.count;
     amount.id = "counter" + cake.id;
+    amount.ClassName = "Counter-Value-Cart"
     amountButton.appendChild(amount);
 
 
@@ -129,7 +121,6 @@ for (let i = 0; i < cakelis.length;i++){
     var cakeElement = CreateCake(cakelis[i]);
     itemContainer.appendChild(cakeElement);
     itemContainer.appendChild(document.createElement('br'));
-    itemContainer.appendChild(document.createElement('hr'));
     console.log("Created one cake");
 }
 
@@ -141,24 +132,24 @@ function CounterUpdate(cake) {
 }
 
 
-
+// Title of the Order Showcase box
 function orderTitle(){
-    var orderTitle = document.createElement('div');
+    var orderTitle = document.createElement('table');
     orderTitle.className = "order-container";
 
-    var nameHeader = document.createElement('h3');
+    var nameHeader = document.createElement('th');
     nameHeader.textContent = "Name";
     orderTitle.appendChild(nameHeader);
 
-    var priceHeader = document.createElement('h3');
+    var priceHeader = document.createElement('th');
     priceHeader.textContent = "Price";
     orderTitle.appendChild(priceHeader);
 
-    var quantityHeader = document.createElement('h3');
+    var quantityHeader = document.createElement('th');
     quantityHeader.textContent = "Quantity";
     orderTitle.appendChild(quantityHeader);
 
-    var totalHeader = document.createElement('h3');
+    var totalHeader = document.createElement('th');
     totalHeader.textContent = "Total";
     orderTitle.appendChild(totalHeader);
 
@@ -166,6 +157,8 @@ function orderTitle(){
 
 
 }
+// Reads whicih amount elements have more than 0 and
+// shows and calculates the price
 function activateOrder(){
     var order = document.getElementById("calculation");
 
@@ -188,8 +181,7 @@ function activateOrder(){
 
             var orderElement = showOrder(cakelis[i]);
             order.appendChild(orderElement);
-            order.appendChild(document.createElement('br'));
-            order.appendChild(document.createElement('hr'));
+
             console.log("Added cake to order");
             console.log(total);
         }
@@ -217,30 +209,28 @@ function activateOrder(){
 }
 
 function showOrder(cake){
-    var order = document.createElement('div');
+    var order = document.createElement('table');
     order.className = "order-container";
 
-    // var img = document.createElement('img');
-    // img.src = 'Pics/Cakes/' + cakeElement.id + '.jpg';
-    // order.appendChild(img);
 
-    var name = document.createElement('p');
+
+    var name = document.createElement('td');
     name.textContent = cake.name;
     order.appendChild(name);
     
 
-    var price = document.createElement('p');
+    var price = document.createElement('td');
     price.textContent = '$' + cake.price;
-    //price = cake.price;
+
     order.appendChild(price);
     console.log("works");
 
-    var count = document.createElement('p');
+    var count = document.createElement('td');
     count.textContent = cake.count;
-    //count = cake.count;
+
     order.appendChild(count);
 
-    var total = document.createElement('p');
+    var total = document.createElement('td');
     let totalprice = cake.count * cake.price;
     total.textContent = '$' + totalprice;
     order.appendChild(total);

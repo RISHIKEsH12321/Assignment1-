@@ -7,59 +7,56 @@
     <link rel="stylesheet" type="text/css" href="Style.css" /> 
 </head>
 <body>
-    <!-- Images at the Top -->
-    <header class = "flex-container">
-        <img src="Pics/example-logo.jpg" height = "100px">
-        <a href = "Cart.html">
-            <img src="Pics/Cart.png" height = "100px">
-        </a>    
+    <header class = "navbar">
+        <div id="logoNname">
+            <a href = "Index.html">
+            <img src="Pics/Logo.png" id="TopLogo">
+            </a>
+            <h1>Donkey Cakes</h1>
+        </div>
+
     </header>
-    
+    <!-- Cart Img that directs to the cart page -->
+    <a href = "Cart.html">
+        <img  id = "cartpic" src="Pics/Cart.png">
+    </a>    
+
 
     <!-- Navigation Bar -->
     <nav class="flex-container">
-        <a class = "flex-item" href="Index.html">Home</a>
-        <a class = "flex-item" href="Categories.html">Categories</a>
-        <a class = "flex-item" href="About Us.html">About Us</a>
-        <a class = "flex-item" href="Help.html">Help</a>
+        <a id = "navbar" class = "flex-item" href="Index.html">Home</a>
+        <a id = "navbar" class = "flex-item" href="Categories.html">Categories</a>
+        <a id = "navbar" class = "flex-item" href="About Us.html">About Us</a>
+        <a id = "navbar" class = "flex-item" href="Help.html">Help</a>
     </nav>
     <br>
 
-    <section class = "flex-container">
 
+
+    <!-- Displays Main Cake Information -->
+    <section id ="item-details-main">
+
+        <!-- Cake Img -->
         <img class = "item-display"id = "cake-img">
 
-        <!-- <div class = "vline"></div> -->
 
+        <!-- Cake Details like name, price, etc -->
         <section class = "item-values">
             <h1 id = "cake-name"></h1>
 
             <h3 id = "cake-price"></h3>
 
-            <!-- <h4>Quantity</h4>
-            <div>Button to be made</div>
 
-            <input type="submit" value="Submit"> -->
 
             <h4>Description</h4>
             <p id = "cake-des"></p>
             
             
-            <h4>Allergens</h4><br>
+            <h4 id="Allergens-Text-Item">Allergens</h4><br>
             <section class = "flex-container" id = "allergens">
                 
-                <!-- <div class = "allergens">
-                    <img src ="../Pics/Cakes/2.jpg">
-                    <p>Straberries</p>
-                </div>
-                <div class = "allergens">
-                    <img src ="../Pics/Cakes/2.jpg">
-                    <p>Straberries</p>
-                </div>
-                <div class = "allergens">
-                    <img src ="../Pics/Cakes/2.jpg">
-                    <p>Straberries</p>
-                </div> -->
+
+
             </section>
 
         </section>
@@ -67,20 +64,20 @@
     </section>
 
     <br>
+    <br>
+    <br>
 
-    <hr>
-    <section class = "flex-container">
-        <div class = "item-values">
+
+    <!-- Non-improtant Information -->
+    <section id ="item-other-information">
+        <div class = "item-values" id ="serving-size-container-item">
             <h2>Serving Size</h2>
             <p id = "serving-size"></p>
 
-            <!-- <h2>Ingredients</h2>
-            <p id = "cake-ingredients"></p> -->
         </div>
-        <!-- <div class = "vline"></div> -->
-        <div class = "item-values">
-            <!-- <h2>Serving Size</h2>
-            <p id = "serving-size"></p> -->
+
+        <div class = "item-values" id ="ingredients-container-item">
+
 
             <h2>Ingredients</h2>
             <p id = "cake-ingredients"></p>
@@ -88,7 +85,9 @@
 
     </section>
 
-    <hr>
+
+    <br>
+    <br>
     <br>
 
 
@@ -97,21 +96,14 @@
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Shop Name</li>
             <li><a href="About Us.html">About Us</a></li>
-            <li>Events</li>
-        </ul>
-
-        <ul class = "BottomFlex-item"  style ="list-style-type: none;">
-            <li class = "bottomHead">Ordering</li>
-            <li>Refund Policy</li>
-            <li>Terms And Conditions</li>
-            <li>Privacy Policy</li>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Connect With Us</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>TicTok</li>
+
+                <a href = "https://www.instagram.com/"><img src = "Pics/instagram.png" height = 40px width = 40px></a>
+                <a href = "https://www.facebook.com/"><img src = "Pics/facebook.png" height = 40px width = 40px></a>
+                <a href = "https://twitter.com/"><img src = "Pics/twitter.png" height = 40px width = 40px></a>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">

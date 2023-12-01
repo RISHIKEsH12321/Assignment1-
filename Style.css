@@ -1,38 +1,127 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    
 }
+
 
 body{
-    margin:0%
+    margin:0%;
+    /* background-image: url(Pics/Background_resized.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* height: 100vh; */
+    /* background-color: black; */
 }
 
+#logoNname{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-header{
-    /* background-image: url("Pics/"); */
-    background-color: blue;
+#TopLogo{
+    height: 70px;
+    width: 70px;
+}
 
+.navbar{
+    
+    background-color: rgb(251, 223, 199);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3%; 
+    padding-bottom: 3%;
+
+}
+
+#cartpic{
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
 }
 
 
 nav {
     display: flex;
-    border: 1px solid black;
-    padding: 0;
+    /* border: 2px solid rgb(255, 119, 0); */
+    background-color: rgb(251, 223, 199);
+    padding: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+
 }
 
 #navbar {
     flex: 1;
-    background-color: red;
+    background-color: rgb(251, 223, 199);
     text-align: center;
     padding: 10px; /* Add padding for better spacing */
     box-sizing: border-box; /* Include padding in width calculation */
-    margin:0%
+    margin:0%;
+    color:black;
 }
 
 #navbar:hover {
-    background-color: black;
+    background-color: pink;
+    color: white;
 }
 
+#HomePagePic{
+    height: 50%;
+    width: 40%;
+    padding-right: 5%;
+}
+
+.HomePageAdvertisement{
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-top: 5%;
+
+}
+
+
+.split h3{
+    padding: 0px;
+    padding-right: 10px;
+    font-size: 350%;
+    margin-bottom: 2%;
+}
+
+.split p{
+    padding: 10px;
+    padding-right: 10px;
+    padding-left: 0%;
+    font-size:200%;
+    font-weight: bold;
+}
+
+.HomePageAdvertisementButton{
+    
+    border: 2px solid black;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;        
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+#aboutusTitle{
+    margin-left: 45%
+}
 
 
 #aboutusImg{
@@ -48,13 +137,22 @@ nav {
 }
 
 .AboutUsBox{
-    background-color: rgba(204, 82, 82, 0.3);
+    background-color:antiquewhite;
     
     margin: 10px;
 
 
 }
 
+#abtHeading{
+    font-size: 250%;
+    font-weight: bolder;
+}
+
+#abtText{
+    font-size: 150%;
+    font-weight:600;
+}
 
 .flex-container{
     display: flex;
@@ -72,14 +170,63 @@ nav {
     
 }
 
+#help-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+#payment-header{
+    margin-left: 45%;
+}
+
+#payment-header-text{
+    font-size: large; 
+    margin-left: 35%;
+}
+
+#help-header{
+    width: fit-content;
+    margin-left: 40%;
+}
+
+#help-header-text{
+    font-size: large; 
+    margin-left: 35%;
+}
+
+.form-section {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+
 .form-item{
     height: min-content;
     margin: 10px;
     text-align: left;
     font-size: 20px;
     font-weight: bold;
-
+    justify-content: center;
+    padding: 5%;
+    border-radius: 5%;
+    background-color: rgb(251, 223, 199);
 }
+
+
+#radioOptionForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
 
 .inputRadio{
     font-weight: lighter;
@@ -121,6 +268,7 @@ label{
     font-size: 15px;
     font-weight: bold;
     line-height: 250%;
+    border-radius: 5%;
 }
 
 
@@ -140,30 +288,27 @@ label{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color: antiquewhite;
+    line-height: 200%;
 }
+
 .split{
     padding: 10px;
     padding-right: 10px;
-}
-
-.split h3{
-    padding: 10px;
-    padding-right: 10px;
-    font-size:45px;
-}
-
-.split p{
-    padding: 10px;
-    padding-right: 10px;
-    font-size:25px;
+    block-size: auto;
+    align-self: center;
 }
 
   
 
 .container{
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: space-around ;
 }
 
@@ -182,6 +327,15 @@ label{
     justify-content: center;
     align-items: center;
 }
+
+#SignatureCakeContainer{
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    background-color: antiquewhite;
+
+}
+
 
 .header{
     margin: auto;
@@ -202,14 +356,21 @@ label{
 .image-wrapper{
     display: inline-block;
     text-align: center;
+    align-content: center;
 }
 
 
 #item-img{
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+
 }
 
+#price{
+    width:auto;
+    align-self: center;
+}
 
 .flex-img{
     width: 400px;
@@ -217,6 +378,25 @@ label{
     text-align: center;
     font-size: 15px;
     font-weight: bold;
+}
+
+.cake-category-item{
+    width: 400px;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 1%;
+    background-color: rgb(244, 213, 205);
+    padding-top: 1%;
+    border-radius: 5%;
+}
+
+.cake-category-item-img{
+    width: 150px;
+    height: 150px;
+
 }
 
 .flex-img img{
@@ -228,6 +408,17 @@ label{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+
+}
+
+.category-item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+
 }
 
 
@@ -235,6 +426,7 @@ label{
     height: 450px;
     width: 450px;
     margin: 10px;
+    border-radius: 5%;
     /* align-items: left;
     margin-right: 150px;
     margin-right:1px solid black; */
@@ -244,11 +436,44 @@ label{
     text-align: left;
     font-size: 15px;
     font-weight: bold;
+    background-color: rgb(244, 213, 205);
+    padding: 20px;
+    border-radius: 5%;
 }
 .vline{
     border-left: solid 1px black;
 }
 
+
+#item-details-main{
+    background-color: gray;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding:3%;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+#cake-name{
+    font-size: 150%;
+}
+
+#cake-price{
+    font-size: 125%;
+}
+
+#allergens{
+    padding:3%
+}
+
+#Allergens-Text-Item{
+    margin-top: 10%;
+    margin-bottom:0%;
+}
 .allergens{
     text-align: center;
     font-size: 15px;
@@ -267,14 +492,32 @@ label{
 }
 
 #allergen-div-item-display{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    padding-top: 2%;
+    border-radius: 5%;
+    background-color: rgb(238, 248, 177);
+
 }
 
 
+#item-other-information{
+    padding: 5%;
+    background-color: grey;
+    margin: 3%;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .cart-container{
     display: flex;
     flex-direction: row;
+    padding-left: 5%;
+    padding-right: 10%;
+    background-color:rgb(244, 213, 205);
+    margin: 3%;
+    border-radius: 30px 30px 30px 30px;
     /* justify-content: space-around; */
     
 } 
@@ -303,38 +546,88 @@ label{
 
 
 #counter button{
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 30px;
     /* align-items: center; */
 }
 
 #counter div{
     width: 20px;
-    height: 20px;
+    height: fit-content;
+    
 }
 
 #counter.flex-container{
-    width: 20px;
-    height: 20px;
+    width: fit-content;
+    height: fit-content;
     align-self: center;
+    align-items: center;
+    
 }
 
-/* 
-.calculation{
+[id^="counter"]{
+    font-size: 40px;
+    height: fit-content;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* #cart-container{
     display: flex;
+}  */
 
-} */
+#calculation-button{
+    padding: 10px;
+    font-size: 16px;
+    margin: auto; /* Add this to center the button */
+    display: block; /* Add this to center the button */
 
-.order-container{
+}
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+
+}
+
+.order-container {
+    width: 80%;
+    margin: auto; /* Center the table on the page */
+    border-collapse: collapse;
+    
+    
+}
+
+.order-container th{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width: 25%;
+}
+
+.order-container td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    width: 25%;
+}
+
+
+  
+
+/* .order-container{
     display: flex;
     justify-content: space-around;
 
+    align-items: center;    
+} */
 
-}
+
 
 .finaltotal{
     display: flex;
     justify-content: right;
+
 }
 
 .finaltotal p{
@@ -346,7 +639,263 @@ label{
 
 
 
+@media only screen and (max-width: 376px) {
+
+    /**Header and footer */
+    #HomePagePic{
+        height: 100%;
+        width: 90%;
+        padding-right: 5%;
+    }
+
+    .BottomFlex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* border: 1px solid black; */
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        background-color: antiquewhite;
+        line-height: 200%;
+    }
+
+    /* Home Page*/
+    .HomePageAdvertisement{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-top: 5%;
+    
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        justify-content: center ;
+        padding-left: 0%;
+    }
+
+    .image-wrapper{
+        /* display: inline-block; */
+        display: inline;
+        text-align: center;
+        align-content: center;
+    }
 
 
+    /* About Us Page*/
+
+    #aboutusTitle{
+        margin-left: 30%;
+        width: fit-content;
+        align-self: center;
+    }
+
+    .AboutUsBox{
+        background-color:antiquewhite;
+        display: flex;
+        flex-direction: column;
+        margin:  5%;
+
+        width: 90%;
+        
+    }
+
+    #aboutusImg{
+        width: 70%;
+        height: 60%;
+        align-self: center;
+        /*border-radius: 100px;*/
+    }
+
+    #abtHeading{
+        font-size: 50px;
+        font-weight: bolder;
+        margin-top: 4%;
+    }
+    
+    #abtText{
+        font-size: 20px;
+        font-weight:600;
+    }
 
 
+    /* Cart */
+
+    .cart-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color:rgb(244, 213, 205);
+        margin: 5%;
+        border-radius: 30px 30px 30px 30px;
+        width: 300px;
+        /* justify-content: space-around; */
+        
+   } 
+   
+   .Cart-item-details h2 {
+        width:300px;
+        padding-top:0px;
+    }
+
+
+     #item-img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        padding: 5%;
+        margin-left: 20%;
+    
+    }
+
+
+    /* Final Purchase */
+
+    #payment-header{
+        margin-left :35%;
+    }
+
+    
+    #payment-header-text{
+        font-size: large; 
+        margin-left: 10%;
+        width: 300px;
+    }
+
+    .form-section {
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: fit-content;
+        
+    }
+
+    .form-item{
+        height: min-content;
+        margin: 10px;
+        text-align: left;
+        font-size: 20px;
+        font-weight: bold;
+        justify-content: center;
+        padding: 5%;
+        border-radius: 30px 30px 30px 30px;
+        background-color: rgb(251, 223, 199);
+    }
+
+    #email{
+        width: 300px;
+    }
+    #phoneNo{
+        width: 300px;
+    }
+
+    #fullName{
+        width: 300px;
+    }
+    #country{
+        width: 300px;
+    }
+
+    #address{
+        width: 300px;
+    }
+    #postalcode{
+        width: 300px;
+    }
+
+    #FinalSubmit{
+        width: 300px;
+    }
+
+    #radioOptionForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: fit-content;
+    }
+
+    #radioOption{
+        width: fit-content;
+    }
+    
+
+    /* Help */
+
+    #help-container{
+        flex-direction: column;
+    }
+
+    #orderID{
+        width: 300px;
+    }
+
+    #comments{
+        width: 300px;
+    }
+    #help-submit-button{
+        width: 300px;
+    }
+
+    .form-box{
+        margin:5%;
+    }
+    
+    
+    #help-header{
+        width: fit-content;
+        margin-left: 15%;
+    }
+
+    #help-header-text{
+        font-size: large; 
+        margin-left: 15%;
+        width: 80%;
+    }
+        
+
+    #item-details-main{
+        width:90%;
+        background-color: gray;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding:3%;
+        border-radius: 30px 30px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+    .item-display{
+        height:250px;
+        width: 250px;
+        margin: 5%;
+        margin-left: 13%;
+        border-radius: 5%;
+
+    }
+    
+    #item-other-information{
+        padding: 5%;
+        background-color: grey;
+        margin: 3%;
+        border-radius: 30px 30px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #serving-size-container-item{
+        margin:5%;
+    }
+    
+}
+  

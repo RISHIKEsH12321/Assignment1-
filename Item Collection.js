@@ -37,7 +37,7 @@ cakelis.push(new CakeObject(20, "Caramel Apple Cake", "Spiced apple cake layers 
 
 function CreateCake(cake) {
   var div = document.createElement('div');
-  div.className = 'flex-img';
+  div.className = 'cake-category-item';
 
   var img = document.createElement('img');
   img.src = 'Pics/Cakes/' + cake.id + '.jpg';
@@ -58,22 +58,19 @@ function CreateCake(cake) {
   pPrice.textContent = '$' + cake.price;
   div.appendChild(pPrice);
 
-  var inputSubmit = document.createElement('input');
-  inputSubmit.type = 'submit';
-  inputSubmit.value = 'Submit';
-  div.appendChild(inputSubmit);
 
   return div;
         }
 
 // Append the HTML elements to the "item-container" section
-var itemContainer = document.querySelector('.item-container');
+var itemContainer = document.querySelector('.category-item-container');
 for (let i = 0; i < cakelis.length;i++){
   var cakeElement = CreateCake(cakelis[i]);
   itemContainer.appendChild(cakeElement);
   console.log("Created one cake");
 }
 
+// Chaing the item links so the the item.html can show the intended cakes's information
 
 function passObjectData(event) {
     event.preventDefault();
@@ -83,7 +80,6 @@ function passObjectData(event) {
 
 
     // Serialize the object as JSON string
-    //var objectData = JSON.stringify(cake1);
     var id = JSON.stringify(customValue);
 
     // Append the serialized object data as a query parameter to the URL
