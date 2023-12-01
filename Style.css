@@ -6,27 +6,23 @@
 
 body{
     margin:0%;
-    /* background-image: url(Pics/Background_resized.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-    /* height: 100vh; */
-    /* background-color: black; */
 }
 
+/* The logo and the cake shop css */
 #logoNname{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* The logo size */
 #TopLogo{
     height: 70px;
     width: 70px;
 }
 
-.navbar{
-    
+/* The navigation bars style and flex type */
+.navbar{    
     background-color: rgb(251, 223, 199);
     display: flex;
     flex-direction: row;
@@ -37,6 +33,7 @@ body{
 
 }
 
+/* The cart pic at the top right of the page  */
 #cartpic{
     height: 45px;
     width: 45px;
@@ -46,10 +43,9 @@ body{
     margin: 15px;
 }
 
-
+/* Mostly to set the background color of the nav element */
 nav {
     display: flex;
-    /* border: 2px solid rgb(255, 119, 0); */
     background-color: rgb(251, 223, 199);
     padding: 0px;
     padding-left: 10%;
@@ -57,27 +53,31 @@ nav {
 
 }
 
+/* The navbar with the links to other pages */
 #navbar {
     flex: 1;
     background-color: rgb(251, 223, 199);
     text-align: center;
-    padding: 10px; /* Add padding for better spacing */
-    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 10px; 
+    box-sizing: border-box; 
     margin:0%;
     color:black;
 }
 
+/* Change Color when hovering over a option in the navbar */
 #navbar:hover {
     background-color: pink;
     color: white;
 }
 
+/* The advertisement picture size css */
 #HomePagePic{
     height: 50%;
     width: 40%;
     padding-right: 5%;
 }
 
+/* The css for the first portion of the homepage */
 .HomePageAdvertisement{
     display: flex;
     align-items: center;
@@ -86,7 +86,15 @@ nav {
 
 }
 
+/* To make items half of the section */
+.split{
+    padding: 10px;
+    padding-right: 10px;
+    block-size: auto;
+    align-self: center;
+}
 
+/* To make the heading of the advertisement bigger */
 .split h3{
     padding: 0px;
     padding-right: 10px;
@@ -94,6 +102,7 @@ nav {
     margin-bottom: 2%;
 }
 
+/* To make the heading of the advertisement smaller */
 .split p{
     padding: 10px;
     padding-right: 10px;
@@ -102,6 +111,7 @@ nav {
     font-weight: bold;
 }
 
+/* The button that links to the category page */
 .HomePageAdvertisementButton{
     
     border: 2px solid black;
@@ -119,11 +129,12 @@ nav {
     background-color: pink;
 }
 
+
 #aboutusTitle{
     margin-left: 45%
 }
 
-
+/* The size css for all the images in about us page */
 #aboutusImg{
     width: 600px;
     height: 500px;
@@ -131,29 +142,31 @@ nav {
     /*border-radius: 100px;*/
 }
 
+/* Used dduring making the skeletion of the page */
 .box{
     border: 1px solid black;
     margin:5px;
 }
 
+/* One box for each of the points */
 .AboutUsBox{
     background-color:antiquewhite;
-    
     margin: 10px;
-
-
 }
 
+/* The heading of each of the points */
 #abtHeading{
     font-size: 250%;
     font-weight: bolder;
 }
 
+/* The content of each of the points (below the heading) */
 #abtText{
     font-size: 150%;
     font-weight:600;
 }
 
+/* Largely used during making the skeletion of the page */
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -161,6 +174,7 @@ nav {
     
 }
 
+/* Largely used during making the skeletion of the page */
 .flex-item{
     height: auto;
     margin: 10px;
@@ -170,6 +184,8 @@ nav {
     
 }
 
+
+/* Contains the form elements  */
 #help-container{
     display: flex;
     flex-direction: row;
@@ -177,26 +193,30 @@ nav {
     
 }
 
-
+/* The heading of the final payment page */
 #payment-header{
     margin-left: 45%;
 }
 
+/* The text below the payment header */
 #payment-header-text{
     font-size: large; 
     margin-left: 35%;
 }
 
+/* The heading of the final help page */
 #help-header{
     width: fit-content;
     margin-left: 40%;
 }
 
+/* The text below the help header */
 #help-header-text{
     font-size: large; 
     margin-left: 35%;
 }
 
+/* Largely used during making the skeletion of the page */
 .form-section {
     margin: auto;
     display: flex;
@@ -206,7 +226,7 @@ nav {
     
 }
 
-
+/* Contains the form */
 .form-item{
     height: min-content;
     margin: 10px;
@@ -219,7 +239,7 @@ nav {
     background-color: rgb(251, 223, 199);
 }
 
-
+/* To make the options side by side */
 #radioOptionForm{
     display: flex;
     flex-direction: row;
@@ -235,7 +255,7 @@ nav {
     height: min-content;
 }
 
-
+/* Overall form input size */
 form input{
     height: 40px;
     width:450px;
@@ -271,11 +291,12 @@ label{
     border-radius: 5%;
 }
 
-
+/* The title for each point in the footer */
 .bottomHead{
     font-size: larger;
 }
 
+/* 1 Entire footer section */
 .BottomFlex-item{
     height: auto;
     margin: 10px;
@@ -284,6 +305,7 @@ label{
     font-weight: bold;
 }
 
+/* Holds the footer */
 .BottomFlex-container{
     display: flex;
     flex-direction: row;
@@ -297,25 +319,15 @@ label{
     line-height: 200%;
 }
 
-.split{
-    padding: 10px;
-    padding-right: 10px;
-    block-size: auto;
-    align-self: center;
-}
-
-  
-
+/* Largely used in creating the skeleton of the website */
 .container{
     display: flex;
-    /* border: 1px solid black; */
     justify-content: space-around ;
 }
 
+/* CSS of a normal button */
 .button{
-
     border: 1px solid black;
-
     font-size: large;
     border-radius: 15px;        
     padding-top: 2%;
@@ -328,6 +340,7 @@ label{
     align-items: center;
 }
 
+/* Hold the 6 cakes in the home page */
 #SignatureCakeContainer{
     padding: 5%;
     margin-top: 5%;
@@ -341,6 +354,8 @@ label{
     margin: auto;
     width: fit-content;
 }
+
+/* Largely used in creating the skeleton of the website */
 .flex-cake{
     height: auto;
     margin: 10px;
@@ -353,13 +368,14 @@ label{
     border: 1px solid black;
 }
 
+/* Used to align imgs correctly */
 .image-wrapper{
     display: inline-block;
     text-align: center;
     align-content: center;
 }
 
-
+/* Used when creating cakes using JS */
 #item-img{
     width: 150px;
     height: 150px;
@@ -367,11 +383,13 @@ label{
 
 }
 
+/* Used when creating cakes using JS */
 #price{
     width:auto;
     align-self: center;
 }
 
+/* Used in creating skeleton of website */
 .flex-img{
     width: 400px;
     height: 280px;
@@ -380,6 +398,7 @@ label{
     font-weight: bold;
 }
 
+/* Used when creating cakes in category.js */
 .cake-category-item{
     width: 400px;
     height: fit-content;
@@ -393,15 +412,19 @@ label{
     border-radius: 5%;
 }
 
+/* Used when creating cakes in category.js */
 .cake-category-item-img{
     width: 150px;
     height: 150px;
 
 }
 
+/* Used when creating skeleton of website */
 .flex-img img{
     border-radius: 50%;
 }
+
+/* Used when creating skeleton of website */
 .item-container{
     display: flex;
     flex-direction: row;
@@ -411,27 +434,24 @@ label{
 
 }
 
+/* Used to Contain all items in category */
 .category-item-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-
-
 }
 
-
+/* Used when creating skeleton of website */
 .item-display{
     height: 450px;
     width: 450px;
     margin: 10px;
     border-radius: 5%;
-    /* align-items: left;
-    margin-right: 150px;
-    margin-right:1px solid black; */
 }
 
+/* Used when creating skeleton of website */
 .item-values{
     text-align: left;
     font-size: 15px;
@@ -440,11 +460,13 @@ label{
     padding: 20px;
     border-radius: 5%;
 }
+
+/* Just a verticle line (used to seperate 2 horizontal sections) */
 .vline{
     border-left: solid 1px black;
 }
 
-
+/* Used when creating skeleton of website */
 #item-details-main{
     background-color: gray;
     margin-left: 2%;
@@ -457,7 +479,7 @@ label{
     
 }
 
-
+/* Used to make item cake font look nice */
 #cake-name{
     font-size: 150%;
 }
@@ -470,20 +492,26 @@ label{
     padding:3%
 }
 
+/* Text size of allergens */
 #Allergens-Text-Item{
     margin-top: 10%;
     margin-bottom:0%;
 }
+
+/* Holds the allergens items */
 .allergens{
     text-align: center;
     font-size: 15px;
     font-weight: bold;
 }
+
+/* Each allergen pic size css */
 .allergens img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
+
 
 #allergen-img-item-display{
     width: 50px;
@@ -500,7 +528,8 @@ label{
 
 }
 
-
+/* For information below the picutrre like the serving 
+size and the ingredients */
 #item-other-information{
     padding: 5%;
     background-color: grey;
@@ -510,6 +539,7 @@ label{
     flex-direction: row;
     justify-content: space-around;
 }
+/* Used when creating skeleton of website */
 .cart-container{
     display: flex;
     flex-direction: row;
@@ -518,11 +548,9 @@ label{
     background-color:rgb(244, 213, 205);
     margin: 3%;
     border-radius: 30px 30px 30px 30px;
-    /* justify-content: space-around; */
-    
 } 
 
-
+/* Used when creating skeleton of website */
 .cart-container img{
     width: 250px;
     height: 250px;
@@ -533,6 +561,7 @@ label{
 
 }
 
+/* Used when creating skeleton of website */
 .Cart-item-details{
     width:1000px;
     height:200px;
@@ -544,11 +573,10 @@ label{
     font-size: large;
 }
 
-
+/* Button in cart.html css */
 #counter button{
     width: 50px;
     height: 30px;
-    /* align-items: center; */
 }
 
 #counter div{
@@ -572,27 +600,26 @@ label{
     padding-right: 10%;
 }
 
-/* #cart-container{
-    display: flex;
-}  */
 
 #calculation-button{
     padding: 10px;
     font-size: 16px;
-    margin: auto; /* Add this to center the button */
-    display: block; /* Add this to center the button */
+    margin: auto;
+    display: block;
 
 }
 
+/* Contains the caculation button */
 .buttonContainer{
     display: flex;
     align-items: center;
 
 }
 
+/* Table element css for cart.html */
 .order-container {
     width: 80%;
-    margin: auto; /* Center the table on the page */
+    margin: auto;
     border-collapse: collapse;
     
     
@@ -612,18 +639,7 @@ label{
     width: 25%;
 }
 
-
-  
-
-/* .order-container{
-    display: flex;
-    justify-content: space-around;
-
-    align-items: center;    
-} */
-
-
-
+/* CSS for element below the order table */
 .finaltotal{
     display: flex;
     justify-content: right;
@@ -898,4 +914,3 @@ label{
     }
     
 }
-  

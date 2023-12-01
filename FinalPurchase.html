@@ -9,30 +9,29 @@
 <body>
     <header class = "navbar">
         <div id="logoNname">
-            <a href = "Index.html">
+            <a href = "index.html">
             <img src="Pics/Logo.png" id="TopLogo">
             </a>
             <h1>Donkey Cakes</h1>
         </div>
 
     </header>
+
     <!-- Cart Img that directs to the cart page -->
-    <a href = "Cart.html">
+    <a href = "cart.html">
         <img  id = "cartpic" src="Pics/Cart.png">
     </a>    
 
 
     <!-- Navigation Bar -->
     <nav class="flex-container">
-        <a id = "navbar" class = "flex-item" href="Index.html">Home</a>
-        <a id = "navbar" class = "flex-item" href="Categories.html">Categories</a>
-        <a id = "navbar" class = "flex-item" href="About Us.html">About Us</a>
-        <a id = "navbar" class = "flex-item" href="Help.html">Help</a>
+        <a id = "navbar" class = "flex-item" href="index.html">Home</a>
+        <a id = "navbar" class = "flex-item" href="categories.html">Categories</a>
+        <a id = "navbar" class = "flex-item" href="aboutus.html">About Us</a>
+        <a id = "navbar" class = "flex-item" href="help.html">Help</a>
     </nav>
     <br>
     
-
-
 
     <!-- Header of the page -->
     <h1 id = "payment-header">Payment</h1>
@@ -46,7 +45,6 @@
             
             <!-- Contact Information -->
             <h2  style = "margin: 0%;">Contact</h2>
-
             
             <input type="email" id="email" name="email" placeholder="Email" required>
     
@@ -56,19 +54,16 @@
             <br>
             <div id = "radioOptionForm">
                 <div id = "radioOption">
-                    <input class = "inputRadio" type="radio" id="preferPhone" name="referPhone" value="preferPhone">
+                    <input class = "inputRadio" type="radio" id="preferPhone" name="referTo" value="preferPhone">
                     <label for="html" style = "font-size: medium;">Contact Me By Phone</label>
                 </div>
 
                 <div  id = "radioOption">
-                    <input class = "inputRadio" type="radio" id="preferEmail" name="fav_language" value="preferEmail">
+                    <input class = "inputRadio" type="radio" id="preferEmail" name="referTo" value="preferEmail">
                     <label for="css" style = "font-size: medium;">Contact Me By Email</label>
                 </div>
 
             </div>
-
-
-            
 
             <!-- Address -->
 
@@ -85,8 +80,6 @@
 
             <br>
             <input type="number" id="postalcode" name="postalcode" placeholder="Postal Code" maxlength="6" required>
-
-
 
             <!-- Payment -->
 
@@ -108,15 +101,13 @@
 
     </section>
 
-
-
     <br>
     <br>
     <!-- Miscellaneous Information at the Bottom -->
     <footer class = "BottomFlex-container">
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
             <li class = "bottomHead">Shop Name</li>
-            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
         </ul>
 
         <ul class = "BottomFlex-item"  style ="list-style-type: none;">
@@ -140,7 +131,7 @@
         function showAlertAndRedirect() {
             if (validateForm()){
                 alert("Payment Successful!");
-                window.location.href = "Index.html"; 
+                window.location.href = "index.html"; 
             }
             
         }

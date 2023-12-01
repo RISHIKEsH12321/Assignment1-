@@ -9,7 +9,6 @@ function CakeObject(id, name, description, ingredients, serving_sizes, price, al
 }
 
 
-
 let cakelis = [];
 
 
@@ -34,16 +33,6 @@ cakelis.push(new CakeObject(17, "Mocha Hazelnut Cake", "Coffee and hazelnut-infu
 cakelis.push(new CakeObject(18, "Blueberry Lemon Bundt Cake", "Moist bundt cake with bursts of blueberries and a lemon glaze.", "Blueberries, lemon zest, flour, sugar, eggs, butter", "12 servings", "$35",["Nuts", "Dairy", "Eggs"]));
 cakelis.push(new CakeObject(19, "Pumpkin Spice Cake", "Fall-inspired cake with pumpkin, spices, and cream cheese frosting.", "Pumpkin puree, cinnamon, nutmeg, cream cheese, flour, sugar", "10 servings", "$40",["Nuts", "Dairy", "Eggs", "Spices"]));
 cakelis.push(new CakeObject(20, "Caramel Apple Cake", "Spiced apple cake layers with caramel sauce and cream cheese frosting.", "Apples, caramel sauce, cinnamon, flour, sugar, cream cheese", "12 servings", "$48",["Nuts", "Dairy", "Eggs", "Spices", "Fruits"]));
-
-
-
-
-
-
-
-
-
-
 
 
 document.addEventListener('DOMContentLoaded', function () {
